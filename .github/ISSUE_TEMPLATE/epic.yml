@@ -1,0 +1,117 @@
+name: "🚀 Epic"
+description: "Criar uma Epic para agrupar funcionalidades relacionadas"
+title: "[Epic] "
+labels:
+  - epic
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🚀 Nova Epic
+
+        Uma Epic representa uma grande entrega do projeto e agrupa diversas Features, Chores e Bugs relacionados.
+
+  - type: input
+    id: milestone
+    attributes:
+      label: 🎯 Milestone
+      description: Sprint ou versão à qual esta Epic pertence.
+      placeholder: "Sprint 0 - Fundação"
+    validations:
+      required: true
+
+  - type: input
+    id: owner
+    attributes:
+      label: 👤 Responsável
+      description: Responsável pela Epic.
+      placeholder: "Nicolas"
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: 🚨 Prioridade
+      options:
+        - Alta
+        - Média
+        - Baixa
+    validations:
+      required: true
+
+  - type: textarea
+    id: objective
+    attributes:
+      label: 🎯 Objetivo
+      description: Qual é o objetivo desta Epic?
+      placeholder: "Exemplo: Construir toda a infraestrutura inicial do LifeOS."
+    validations:
+      required: true
+
+  - type: textarea
+    id: business_value
+    attributes:
+      label: 💼 Valor para o Produto
+      description: Qual benefício essa Epic traz para o LifeOS?
+      placeholder: "Explique o impacto esperado."
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: 📦 Escopo
+      description: Liste as funcionalidades que fazem parte desta Epic.
+      placeholder: |
+        - Configurar Docker
+        - Configurar PostgreSQL
+        - Configurar Prisma
+        - Criar aplicação Web
+        - Criar aplicação API
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: ✅ Critérios de Conclusão
+      description: Como saberemos que esta Epic está concluída?
+      placeholder: |
+        - Todas as Issues finalizadas
+        - Build funcionando
+        - Documentação atualizada
+    validations:
+      required: true
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: 🔗 Dependências
+      description: Há outras Epics ou Issues necessárias antes desta?
+      placeholder: "#12"
+
+  - type: textarea
+    id: risks
+    attributes:
+      label: ⚠️ Riscos
+      description: Quais riscos podem impactar esta Epic?
+      placeholder: "Ex.: Dependência de integração externa."
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: 💬 Observações
+      description: Informações adicionais.
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: ✔️ Checklist
+      options:
+        - label: Objetivo definido.
+          required: true
+        - label: Escopo revisado.
+          required: true
+        - label: Critérios de conclusão definidos.
+          required: true
+        - label: Dependências identificadas.
