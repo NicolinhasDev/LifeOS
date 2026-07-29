@@ -1,0 +1,59 @@
+name: "♻️ Refactor"
+description: "Melhoria de código existente"
+title: "[Refactor] "
+labels:
+  - refactor
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## ♻️ Refatoração
+
+  - type: textarea
+    id: objective
+    attributes:
+      label: 🎯 Objetivo
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: 📝 Motivação
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: impact
+    attributes:
+      label: 📦 Área Impactada
+      options:
+        - label: Frontend
+        - label: Backend
+        - label: Banco de Dados
+        - label: API
+        - label: Infraestrutura
+
+  - type: dropdown
+    id: estimate
+    attributes:
+      label: 📏 Estimativa
+      options:
+        - XS
+        - S
+        - M
+        - L
+        - XL
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: ✅ Critérios de Aceite
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: 💬 Observações

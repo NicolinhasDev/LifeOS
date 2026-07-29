@@ -1,0 +1,40 @@
+name: "📚 Documentation"
+description: "Criar ou atualizar documentação"
+title: "[Docs] "
+labels:
+  - documentation
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 📚 Documentação
+
+  - type: textarea
+    id: objective
+    attributes:
+      label: 🎯 Objetivo
+    validations:
+      required: true
+
+  - type: textarea
+    id: files
+    attributes:
+      label: 📄 Arquivos afetados
+      placeholder: |
+        docs/architecture.md
+        README.md
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: ✅ Critérios de Aceite
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: 💬 Observações

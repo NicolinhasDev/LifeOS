@@ -1,1 +1,6 @@
 blank_issues_enabled: false
+
+contact_links:
+  - name: 📖 Documentação do LifeOS
+    url: https://github.com/NicolinhasDev/LifeOS/tree/main/docs
+    about: Consulte a documentação antes de abrir uma nova Issue.
