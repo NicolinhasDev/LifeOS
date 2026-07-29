@@ -1,13 +1,94 @@
-# Contributing
+# 🤝 Contribuindo com o LifeOS
 
-## Fluxo de desenvolvimento
+Obrigado por contribuir!
 
-## Como criar uma branch
+Este documento descreve o fluxo de desenvolvimento utilizado no projeto.
 
-## Como abrir um Pull Request
+---
 
-## Padrão de commits
+# Fluxo de Trabalho
 
-## Revisão de código
+Todo desenvolvimento começa por uma Issue.
 
-## Convenções
+Issue
+
+↓
+
+Branch
+
+↓
+
+Commits
+
+↓
+
+Pull Request
+
+↓
+
+Review
+
+↓
+
+Merge
+
+---
+
+# Criando uma Branch
+
+Utilize sempre uma branch baseada na `main`.
+
+Exemplos:
+
+feature/dashboard
+
+feature/auth
+
+fix/login
+
+refactor/button
+
+docs/readme
+
+chore/docker
+
+---
+
+# Commits
+
+Utilizamos Conventional Commits.
+
+Exemplos:
+
+feat(auth): create login page
+
+fix(api): validate email
+
+docs: update README
+
+chore: configure docker
+
+---
+
+# Pull Requests
+
+Todo Pull Request deve:
+
+- possuir uma Issue relacionada
+- possuir descrição
+- atualizar documentação quando necessário
+- passar pelo checklist
+
+---
+
+# Padrões de Código
+
+- TypeScript
+- ESLint
+- Prettier
+- Clean Architecture
+- SOLID
+
+---
+
+# Obrigado por contribuir ❤️

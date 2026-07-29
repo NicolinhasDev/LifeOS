@@ -1,14 +1,44 @@
-## Descrição
+# 📋 Pull Request
 
-<!-- Explique o que foi implementado -->
+## 📌 Descrição
 
-## Issue relacionada
+Descreva resumidamente o que foi implementado.
+
+---
+
+## 🎯 Issue relacionada
 
 Closes #
 
-## Checklist
+---
 
-- [ ] Código testado
-- [ ] Lint executado
-- [ ] Sem conflitos
+## ✨ O que foi alterado
+
+- 
+- 
+- 
+
+---
+
+## 🧪 Como testar
+
+1.
+2.
+3.
+
+---
+
+## 📷 Screenshots
+
+Caso exista alteração visual, adicione imagens.
+
+---
+
+## ✅ Checklist
+
+- [ ] Código revisado
+- [ ] Build executando
+- [ ] Lint sem erros
+- [ ] Sem conflitos de merge
 - [ ] Documentação atualizada
+- [ ] Issue vinculada
