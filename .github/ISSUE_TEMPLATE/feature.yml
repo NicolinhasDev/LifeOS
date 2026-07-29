@@ -1,0 +1,99 @@
+name: "✨ Feature"
+description: "Solicitar uma nova funcionalidade"
+title: "[Feature]: "
+labels:
+  - feature
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por contribuir com o LifeOS.
+
+        Use este formulário para propor uma nova funcionalidade.
+
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objetivo
+      description: O que deve ser desenvolvido?
+      placeholder: Ex.: Criar o componente Button do Design System.
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Contexto
+      description: Por que essa funcionalidade é necessária?
+      placeholder: Explique o problema que será resolvido.
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Escopo
+      description: O que faz parte dessa entrega?
+      placeholder: |
+        - Criar componente
+        - Criar testes
+        - Atualizar documentação
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Critérios de aceite
+      description: Como saberemos que essa tarefa foi concluída?
+      placeholder: |
+        - Funciona corretamente
+        - Responsivo
+        - Tipado
+        - Testado
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Prioridade
+      options:
+        - Alta
+        - Média
+        - Baixa
+    validations:
+      required: true
+
+  - type: dropdown
+    id: module
+    attributes:
+      label: Módulo
+      options:
+        - Core
+        - Auth
+        - Dashboard
+        - Finance
+        - Goals
+        - Health
+        - Study
+        - Career
+        - Productivity
+        - Analytics
+        - Infrastructure
+    validations:
+      required: true
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependências
+      description: Existe alguma Issue que precisa ser concluída antes?
+      placeholder: Ex.: #12
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Observações
+      description: Informações adicionais.
