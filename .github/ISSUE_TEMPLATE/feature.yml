@@ -1,6 +1,6 @@
 name: "✨ Feature"
-description: "Solicitar uma nova funcionalidade"
-title: "[Feature]: "
+description: "Solicitar uma nova funcionalidade para o LifeOS"
+title: "[Feature] "
 labels:
   - feature
 
@@ -8,57 +8,74 @@ body:
   - type: markdown
     attributes:
       value: |
-        Obrigado por contribuir com o LifeOS.
+        Obrigado por contribuir com o **LifeOS**.
 
-        Use este formulário para propor uma nova funcionalidade.
+        Preencha todas as informações abaixo antes de criar a Issue.
 
   - type: textarea
     id: objective
     attributes:
-      label: Objetivo
-      description: O que deve ser desenvolvido?
-      placeholder: Ex.: Criar o componente Button do Design System.
+      label: 🎯 Objetivo
+      description: "O que deve ser desenvolvido?"
+      placeholder: "Exemplo: Criar o componente Button do Design System."
     validations:
       required: true
 
   - type: textarea
     id: context
     attributes:
-      label: Contexto
-      description: Por que essa funcionalidade é necessária?
-      placeholder: Explique o problema que será resolvido.
+      label: 📝 Contexto
+      description: "Por que essa funcionalidade é necessária?"
+      placeholder: "Explique o problema que será resolvido."
     validations:
       required: true
 
-  - type: textarea
+  - type: checkboxes
     id: scope
     attributes:
-      label: Escopo
-      description: O que faz parte dessa entrega?
-      placeholder: |
-        - Criar componente
-        - Criar testes
-        - Atualizar documentação
-    validations:
-      required: true
+      label: 📦 Escopo
+      description: "Marque tudo o que faz parte desta entrega."
+      options:
+        - label: Frontend
+        - label: Backend
+        - label: Banco de Dados
+        - label: API
+        - label: UI
+        - label: UX
+        - label: Testes
+        - label: Documentação
 
   - type: textarea
     id: acceptance
     attributes:
-      label: Critérios de aceite
-      description: Como saberemos que essa tarefa foi concluída?
+      label: ✅ Critérios de Aceite
+      description: "Como saberemos que a tarefa foi concluída?"
       placeholder: |
-        - Funciona corretamente
+        - Funcionalidade implementada
+        - Código tipado
         - Responsivo
-        - Tipado
-        - Testado
+        - Testes passando
+        - Documentação atualizada
+    validations:
+      required: true
+
+  - type: dropdown
+    id: estimate
+    attributes:
+      label: 📏 Estimativa
+      options:
+        - XS
+        - S
+        - M
+        - L
+        - XL
     validations:
       required: true
 
   - type: dropdown
     id: priority
     attributes:
-      label: Prioridade
+      label: 🚨 Prioridade
       options:
         - Alta
         - Média
@@ -69,7 +86,7 @@ body:
   - type: dropdown
     id: module
     attributes:
-      label: Módulo
+      label: 🧩 Módulo
       options:
         - Core
         - Auth
@@ -85,15 +102,40 @@ body:
     validations:
       required: true
 
-  - type: textarea
+  - type: input
+    id: milestone
+    attributes:
+      label: 🎯 Milestone
+      description: "Sprint ou versão prevista."
+      placeholder: "Sprint 0 - Fundação"
+
+  - type: input
     id: dependencies
     attributes:
-      label: Dependências
-      description: Existe alguma Issue que precisa ser concluída antes?
-      placeholder: Ex.: #12
+      label: 🔗 Dependências
+      description: "Informe outras Issues relacionadas."
+      placeholder: "#12"
+
+  - type: textarea
+    id: mockups
+    attributes:
+      label: 🎨 Mockups / Referências
+      description: "Links do Figma, imagens ou referências visuais."
 
   - type: textarea
     id: notes
     attributes:
-      label: Observações
-      description: Informações adicionais.
+      label: 💬 Observações
+      description: "Informações adicionais."
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: ✔️ Checklist
+      options:
+        - label: Li a documentação do projeto.
+          required: true
+        - label: Verifiquei que essa funcionalidade ainda não existe.
+          required: true
+        - label: Esta Issue possui informações suficientes para desenvolvimento.
+          required: true
